@@ -120,7 +120,7 @@
 		window.C2_RegisterSW = function C2_RegisterSW()
 		{
 			if (!navigator.serviceWorker)
-				return;		// no SW support, ignore call
+				return;	// no SW support, ignore call
 			
 			try {
 				navigator.serviceWorker.register("sw.js", { scope: "./" })
